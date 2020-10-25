@@ -41,7 +41,7 @@ app.post("/api/contact", (req, res) => {
     (error, response) => {
       console.log(response);
       if (error) {
-        res.sendStatus(500);
+        res.status(500).send(error);
       } else {
         res.send({ message: "email envoyer" });
       }
