@@ -50,7 +50,7 @@ app.post("/api/contact", (req, res) => {
   );
 });
 
-app.listen(process.env.PORT || 5000, (err) => {
+app.listen(process.env.PORT || 3000, (err) => {
   if (err) {
     throw new Error("Something bad happened...");
   }
