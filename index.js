@@ -25,7 +25,7 @@ let transporter = nodemailer.createTransport({
 
 const limiter = rateLimit({
   windowMs: 60 * 60 * 1000, // 1 hour
-  max: 10, // limit each IP to 100 requests per windowMs
+  max: 2, // limit each IP to 100 requests per windowMs
 });
 
 app.use(limiter);
